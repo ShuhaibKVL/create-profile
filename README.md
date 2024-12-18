@@ -1,6 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Profile Creator
+
+A Next.js application for creating user profiles with client-side validation.
+
+## Overview
+## Overview
+The Profile Creator application allows users to fill out a form to create their profile. It features client-side validation, user-friendly error messages, and a confirmation message upon successful submission. The project is built with Next.js and React.
+
+The project focous on client-side validation.The validation and form done without depending on any libraries.
+
+## Features
+- Form validation for fields like Name, Email, Phone, and Password.
+-The password validation strictly monitoring.
+- User-friendly error messages for invalid inputs.
+- Submit button disabled until the form is valid.
+- Confirmation message upon successful submission.
+- Unit tests for validation logic.
+
+
+
+## Installation
+
+#1
+Extract the zip file.
+
+#2 Navigate to the project directory
+
+cd profile-creator
+
+#3 Install dependencies
+npm install
+
+#4
+Start the development server
+
+#5 Open the application in your browser at
+
+http://localhost:3000
+
+
+
+## Testing
+Unit tests have been implemented for the validation logic by jest and react-Library.
+
+ To run the tests:
+
+1. Run the following command:
+   ```bash
+   npm test
+
+
+## Technologies Used
+- **Next.js**: Framework for building React applications.
+- **React**: Library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Jest**: Testing framework.
+- **@testing-library/react**: For testing React components.
+
+
+## Folder Structure
+
+profile-creator/
+├── public/           # Static assets
+├── src/
+│   ├── components/   # React components
+│   ├── hooks/        # Custom hooks
+│   ├── pages/        # Next.js pages
+├── tests/            # Unit tests
+├── package.json      # Project dependencies
+└── README.md         # Documentation
+
+
 
 First, run the development server:
 
@@ -22,15 +92,11 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm install @testing-library/react @testing-library/jest-dom @testing-library/user-event --save-dev --legacy-peer-deps
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm install --save-dev ts-jest @types/jest @testing-library/react@^14 @testing-library/react-hooks@^8 --legacy-peer-deps
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm install --save-dev @testing-library/react@14 @testing-library/user-event@14 @testing-library/jest-dom@6 --legacy-peer-deps
