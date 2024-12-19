@@ -1,43 +1,69 @@
-
-## Profile Creator
+# Profile Creator
 
 A Next.js application for creating user profiles with client-side validation.
 
-## Overview
-## Overview
-The Profile Creator application allows users to fill out a form to create their profile. It features client-side validation, user-friendly error messages, and a confirmation message upon successful submission. The project is built with Next.js and React.
+---
 
-The project focous on client-side validation.The validation and form done without depending on any libraries.
+## Overview
+The **Profile Creator** application allows users to fill out a form to create their profile. 
+It focuses on client-side validation, providing user-friendly error messages, and a confirmation message upon successful submission. 
+The project is built with **Next.js** and **React**, and the validation and form implementation are done without relying on external libraries.
+
+---
 
 ## Features
-- Form validation for fields like Name, Email, Phone, and Password.
--The password validation strictly monitoring.
+- Form validation for fields like **Name**, **Email**, **Phone**, and **Password**.
+- Strict password validation based on predefined rules.
 - User-friendly error messages for invalid inputs.
 - Submit button disabled until the form is valid.
-- Confirmation message upon successful submission.
-- Unit tests for validation logic.
+- Confirmation message displayed upon successful submission.
+- Unit tests implemented for validation logic.
 
-
+---
 
 ## Installation
 
-#1
-Extract the zip file.
+### 1. Extract the Zip File
+Unzip the provided `profile-creator.zip` file into a folder of your choice.
 
-#2 Navigate to the project directory
+### 2. Navigate to the Project Directory
+Open your terminal and navigate to the extracted folder:
 
-cd profile-creator
+`cd profile-creator`
 
-#3 Install dependencies
-npm install
+### 3. Install Dependencies
+npm install --save-dev @testing-library/react@14 @testing-library/user-event@14 @testing-library/jest-dom@6 --legacy-peer-deps
 
-#4
-Start the development server
+### 4. Start the Development Server
+npm run dev
 
-#5 Open the application in your browser at
+## Install the remaining project dependencies:[only if need]
+
+### 5. Open the Application
 
 http://localhost:3000
 
+
+
+### clone the project
+git clone https://github.com/ShuhaibKVL/create-profile.git
+
+### 2. Navigate to the Project Directory
+Open your terminal and navigate to the extracted folder:
+
+`cd profile-creator`
+
+### 3. Install Dependencies
+npm install --save-dev @testing-library/react@14 @testing-library/user-event@14 @testing-library/jest-dom@6 --legacy-peer-deps
+
+### 4. Start the Development Server
+npm run dev
+
+## Install the remaining project dependencies:[only if need]
+
+### 5. Open the Application
+
+http://localhost:3000
 
 
 ## Testing
@@ -45,8 +71,9 @@ Unit tests have been implemented for the validation logic by jest and react-Libr
 
  To run the tests:
 
-1. Run the following command:
-   ```bash
+ 1.Open the terminal in the project directory.
+
+2. Run the following command:
    npm test
 
 
@@ -57,46 +84,3 @@ Unit tests have been implemented for the validation logic by jest and react-Libr
 - **Jest**: Testing framework.
 - **@testing-library/react**: For testing React components.
 
-
-## Folder Structure
-
-profile-creator/
-├── public/           # Static assets
-├── src/
-│   ├── components/   # React components
-│   ├── hooks/        # Custom hooks
-│   ├── pages/        # Next.js pages
-├── tests/            # Unit tests
-├── package.json      # Project dependencies
-└── README.md         # Documentation
-
-
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-
-npm install @testing-library/react @testing-library/jest-dom @testing-library/user-event --save-dev --legacy-peer-deps
-
-npm install --save-dev ts-jest @types/jest @testing-library/react@^14 @testing-library/react-hooks@^8 --legacy-peer-deps
-
-
-
-npm install --save-dev @testing-library/react@14 @testing-library/user-event@14 @testing-library/jest-dom@6 --legacy-peer-deps
